@@ -1,0 +1,28 @@
+{
+  "name": "查看密码",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "查看密码",
+  "browser_action": {
+    "default_icon": "icons/icon-disabled.png",
+    "name": "View the password!"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "background": {
+    "persistent": true,
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "webRequest",
+    "*://*/*"
+  ],
+  "icons": {
+    "128": "icons/icon-enabled.png",
+    "16": "icons/icon-enabled.png",
+    "19": "icons/icon-enabled.png",
+    "32": "icons/icon-enabled.png",
+    "48": "icons/icon-enabled.png"
+  }
+}
